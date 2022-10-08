@@ -29,6 +29,22 @@ Example 4:
 ***********************************************************************/
 
 // Your code here
+function countDownTimer(n) {
+  let count = n;
+  function countDown(){
+    if(count > 0){
+      count -= 1;
+      if(count === 0){
+        return "Happy New Year!"
+      }
+      return countDown;
+    }
+  }
+  if(count === 0){
+    return "Happy New Year!"
+  }
+  return countDown;
+  }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
